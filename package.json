@@ -1,0 +1,48 @@
+{
+  "name": "find-conditional-comments",
+  "version": "0.0.0",
+  "description": "Finds all conditional comments in a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/useparcel/find-conditional-comments.git"
+  },
+  "keywords": [
+    "conditional",
+    "comments",
+    "html",
+    "email"
+  ],
+  "author": "Avi Goldman <avi@useparcel.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/useparcel/find-conditional-comments/issues"
+  },
+  "homepage": "https://github.com/useparcel/find-conditional-comments#readme",
+  "dependencies": {
+    "json-rules-engine": "^5.2.0",
+    "ranges-iterate": "^1.2.2",
+    "ranges-regex": "^3.0.2"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*.(js|json)": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
