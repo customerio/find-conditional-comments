@@ -5,11 +5,11 @@ module.exports = function findConditionalComments(str) {
 
   let result;
   while ((result = CONDITIONAL_COMMENT_REGEX.exec(str)) !== null) {
-    const [match, start, commentDashes, content, end] = result;
+    const [match, open, commentDashes, content, close] = result;
 
     comments.push({
-      start,
-      end,
+      open,
+      close,
       downlevel: commentDashes == "--" ? "hidden" : "revealed",
       range: [
         CONDITIONAL_COMMENT_REGEX.lastIndex - match.length,
