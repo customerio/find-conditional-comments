@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`find conditional comments 1`] = `
+Array [
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      17,
+      42,
+    ],
+    "start": "<!--[if mso]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      69,
+      116,
+    ],
+    "start": "<!--[if MAC]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      137,
+      199,
+    ],
+    "start": "<!--[if gt mso 14]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      223,
+      285,
+    ],
+    "start": "<!--[if lt mso 14]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      321,
+      377,
+    ],
+    "start": "<!--[if gte mso 14]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      410,
+      466,
+    ],
+    "start": "<!--[if lte mso 14]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      493,
+      558,
+    ],
+    "start": "<!--[if (mso 12)|(mso 16)]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      586,
+      651,
+    ],
+    "start": "<!--[if (mso 12)&(mso 16)]>",
+  },
+  Object {
+    "downlevel": "hidden",
+    "end": "<![endif]-->",
+    "range": Array [
+      679,
+      745,
+    ],
+    "start": "<!--[if !mso]><!-->",
+  },
+  Object {
+    "downlevel": "revealed",
+    "end": "<![endif]>",
+    "range": Array [
+      766,
+      787,
+    ],
+    "start": "<![if mso]>",
+  },
+]
+`;
