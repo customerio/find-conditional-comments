@@ -3,94 +3,94 @@
 exports[`find conditional comments 1`] = `
 Array [
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if mso]>",
     "range": Array [
       17,
       42,
     ],
-    "start": "<!--[if mso]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if MAC]>",
     "range": Array [
       69,
       116,
     ],
-    "start": "<!--[if MAC]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if gt mso 14]>",
     "range": Array [
       137,
       199,
     ],
-    "start": "<!--[if gt mso 14]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if lt mso 14]>",
     "range": Array [
       223,
       285,
     ],
-    "start": "<!--[if lt mso 14]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if gte mso 14]>",
     "range": Array [
       321,
       377,
     ],
-    "start": "<!--[if gte mso 14]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if lte mso 14]>",
     "range": Array [
       410,
       466,
     ],
-    "start": "<!--[if lte mso 14]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if (mso 12)|(mso 16)]>",
     "range": Array [
       493,
       558,
     ],
-    "start": "<!--[if (mso 12)|(mso 16)]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if (mso 12)&(mso 16)]>",
     "range": Array [
       586,
       651,
     ],
-    "start": "<!--[if (mso 12)&(mso 16)]>",
   },
   Object {
+    "close": "<![endif]-->",
     "downlevel": "hidden",
-    "end": "<![endif]-->",
+    "open": "<!--[if !mso]><!-->",
     "range": Array [
       679,
       745,
     ],
-    "start": "<!--[if !mso]><!-->",
   },
   Object {
+    "close": "<![endif]>",
     "downlevel": "revealed",
-    "end": "<![endif]>",
+    "open": "<![if mso]>",
     "range": Array [
       766,
       787,
     ],
-    "start": "<![if mso]>",
   },
 ]
 `;
