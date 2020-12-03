@@ -1,7 +1,4 @@
-const CONDITIONAL_COMMENT_REGEX = /(<!(--)?\[if\s[()\w\s|&!]+\]>(?:<!--+>)?)(.*?)(<!\[endif\]\2>)/gi;
-const extract = require("./utils/extract-condition");
-const tokenize = require("./utils/tokenize-condition");
-const parse = require("./utils/parse-condition");
+const CONDITIONAL_COMMENT_REGEX = /(<!(--)?\[if\s[()\w\s|&!]+\]>(?:<!--+>)?)((?:.|\n)*?)(<!\[endif\]\2>)/gi;
 
 module.exports = function findConditionalComments(str) {
   let comments = [];
@@ -13,15 +10,12 @@ module.exports = function findConditionalComments(str) {
     comments.push({
       start,
       end,
+      downlevel: commentDashes == "--" ? "hidden" : "revealed",
       range: [
         CONDITIONAL_COMMENT_REGEX.lastIndex - match.length,
         CONDITIONAL_COMMENT_REGEX.lastIndex,
       ],
     });
-  }
-
-  for (let comment of comments) {
-    comment.conditions = parse(tokenize(extract(comment.start)));
   }
 
   return comments;
