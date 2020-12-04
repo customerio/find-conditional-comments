@@ -1,4 +1,4 @@
-const CONDITIONAL_COMMENT_REGEX = /(<!(--)?\[if\s[()\w\s|&!]+\]>(?:<!--+>)?)((?:.|\n)*?)(<!\[endif\]\2>)/gi;
+const CONDITIONAL_COMMENT_REGEX = /(<!(--)?\[if\s[()\w\s|&!]+\]>(?:<!--+>)?)((?:.|\n)*?)((?:<!--)?<!\[endif\]\2>)/gi;
 
 module.exports = function findConditionalComments(str) {
   let comments = [];
