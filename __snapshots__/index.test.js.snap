@@ -75,7 +75,7 @@ Array [
     ],
   },
   Object {
-    "close": "<![endif]-->",
+    "close": "<!--<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if !mso]><!-->",
     "range": Array [
