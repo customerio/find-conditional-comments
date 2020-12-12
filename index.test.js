@@ -48,3 +48,23 @@ test("find conditional comments", () => {
 
   expect(comments).toMatchSnapshot();
 });
+
+test("correctly marks comments as downlevel-revealed or downlevel-hidden", () => {
+  expect(
+    findConditionalComments(`
+      <!--[if true]>downlevel-hidden<![endif]-->
+    `)[0].downlevel
+  ).toEqual("hidden");
+
+  expect(
+    findConditionalComments(`
+      <![if !mso]>downlevel-revealed<![endif]>
+    `)[0].downlevel
+  ).toEqual("revealed");
+
+  expect(
+    findConditionalComments(`
+      <!--[if !mso]><!-->downlevel-revealed<!--<![endif]-->
+    `)[0].downlevel
+  ).toEqual("revealed");
+});

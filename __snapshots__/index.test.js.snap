@@ -3,6 +3,7 @@
 exports[`find conditional comments 1`] = `
 Array [
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if mso]>",
@@ -12,6 +13,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if MAC]>",
@@ -21,6 +23,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if gt mso 14]>",
@@ -30,6 +33,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if lt mso 14]>",
@@ -39,6 +43,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if gte mso 14]>",
@@ -48,6 +53,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if lte mso 14]>",
@@ -57,6 +63,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if (mso 12)|(mso 16)]>",
@@ -66,6 +73,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "open": "<!--[if (mso 12)&(mso 16)]>",
@@ -75,8 +83,9 @@ Array [
     ],
   },
   Object {
+    "bubble": true,
     "close": "<!--<![endif]-->",
-    "downlevel": "hidden",
+    "downlevel": "revealed",
     "open": "<!--[if !mso]><!-->",
     "range": Array [
       679,
@@ -84,6 +93,7 @@ Array [
     ],
   },
   Object {
+    "bubble": false,
     "close": "<![endif]>",
     "downlevel": "revealed",
     "open": "<![if mso]>",

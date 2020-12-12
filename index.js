@@ -7,10 +7,13 @@ module.exports = function findConditionalComments(str) {
   while ((result = CONDITIONAL_COMMENT_REGEX.exec(str)) !== null) {
     const [match, open, commentDashes, content, close] = result;
 
+    const bubble = open.endsWith("-->");
+
     comments.push({
       open,
       close,
-      downlevel: commentDashes == "--" ? "hidden" : "revealed",
+      bubble,
+      downlevel: bubble || commentDashes !== "--" ? "revealed" : "hidden",
       range: [
         CONDITIONAL_COMMENT_REGEX.lastIndex - match.length,
         CONDITIONAL_COMMENT_REGEX.lastIndex,
