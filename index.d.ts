@@ -1,20 +1,31 @@
 /**
  * Finds the conditional comments in HTML.
  */
-export default function findConditionalComments(html: string): {
+export default function findConditionalComments(
+  html: string
+): {
+  /**
+   * Whether the item is a comment
+   */
+  isComment: boolean;
+
   /**
    * Opening portion of the conditional comment.
    */
   open: string;
+
   /**
    * Closing portion of the conditional comment.
    */
   close: string;
+
+  /**
+   * Whether the comment "bubbles" around the value.
+   */
   bubble: boolean;
+
   /**
    * Either "revealed" or "hidden".
-   * 
-   * https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/ms537512(v%3dvs.85)#downlevel-hidden-conditional-comments
    */
   downlevel: "revealed" | "hidden";
 
