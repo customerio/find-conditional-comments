@@ -1,6 +1,6 @@
 {
   "name": "find-conditional-comments",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Finds all conditional comments in a string",
   "main": "index.js",
   "types": "index.d.ts",
