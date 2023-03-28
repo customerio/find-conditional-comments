@@ -6,6 +6,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if mso]>",
     "range": Array [
       17,
@@ -16,6 +17,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if MAC]>",
     "range": Array [
       69,
@@ -26,6 +28,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if gt mso 14]>",
     "range": Array [
       137,
@@ -36,6 +39,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if lt mso 14]>",
     "range": Array [
       223,
@@ -46,6 +50,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if gte mso 14]>",
     "range": Array [
       321,
@@ -56,6 +61,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if lte mso 14]>",
     "range": Array [
       410,
@@ -66,6 +72,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if (mso 12)|(mso 16)]>",
     "range": Array [
       493,
@@ -76,6 +83,7 @@ Array [
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
+    "isComment": true,
     "open": "<!--[if (mso 12)&(mso 16)]>",
     "range": Array [
       586,
@@ -86,6 +94,7 @@ Array [
     "bubble": true,
     "close": "<!--<![endif]-->",
     "downlevel": "revealed",
+    "isComment": true,
     "open": "<!--[if !mso]><!-->",
     "range": Array [
       679,
@@ -96,6 +105,7 @@ Array [
     "bubble": false,
     "close": "<![endif]>",
     "downlevel": "revealed",
+    "isComment": false,
     "open": "<![if mso]>",
     "range": Array [
       766,

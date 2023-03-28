@@ -10,6 +10,7 @@ module.exports = function findConditionalComments(str) {
     const bubble = open.endsWith("-->");
 
     comments.push({
+      isComment: open.startsWith("<!--"),
       open,
       close,
       bubble,
