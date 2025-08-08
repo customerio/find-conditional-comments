@@ -68,3 +68,54 @@ test("correctly marks comments as downlevel-revealed or downlevel-hidden", () =>
     `)[0].downlevel
   ).toEqual("revealed");
 });
+
+test("supports nested conditional comments", () => {
+  const html = `
+    <!--[if mso]>
+      Outer start
+      <!--[if gte mso 15]>Inner<![endif]-->
+      Outer end
+    <![endif]-->
+  `;
+
+  const result = findConditionalComments(html);
+
+  expect(result.length).toBe(2);
+
+  // Identify outer and inner by range size
+  const sorted = [...result].sort(
+    (a, b) => a.range[1] - a.range[0] - (b.range[1] - b.range[0])
+  );
+  const inner = sorted[0];
+  const outer = sorted[1];
+
+  expect(inner.open.startsWith("<!--[if gte mso 15]>")).toBe(true);
+  expect(inner.close).toMatch(/<!\[endif\]-->/);
+  expect(inner.isComment).toBe(true);
+  expect(inner.downlevel).toBe("hidden");
+
+  expect(outer.open.startsWith("<!--[if mso]>")).toBe(true);
+  expect(outer.close).toMatch(/<!\[endif\]-->/);
+  expect(outer.isComment).toBe(true);
+  expect(outer.downlevel).toBe("hidden");
+
+  // Inner range should be fully inside outer range
+  expect(inner.range[0]).toBeGreaterThan(outer.range[0]);
+  expect(inner.range[1]).toBeLessThan(outer.range[1]);
+});
+
+test("rejects mismatched closing dashes for HTML-comment style open", () => {
+  const html = `
+    <!--[if mso]>Bad<![endif]>
+  `;
+  const result = findConditionalComments(html);
+  expect(result.length).toBe(0);
+});
+
+test("rejects mismatched closing dashes for downlevel-revealed open (non-comment)", () => {
+  const html = `
+    <![if mso]>Bad<![endif]-->
+  `;
+  const result = findConditionalComments(html);
+  expect(result.length).toBe(0);
+});
