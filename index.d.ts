@@ -1,9 +1,7 @@
 /**
  * Finds the conditional comments in HTML.
  */
-export default function findConditionalComments(
-  html: string
-): {
+export default function findConditionalComments(html: string): {
   /**
    * Whether the item is a comment
    */

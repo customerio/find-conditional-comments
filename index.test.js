@@ -53,19 +53,19 @@ test("correctly marks comments as downlevel-revealed or downlevel-hidden", () =>
   expect(
     findConditionalComments(`
       <!--[if true]>downlevel-hidden<![endif]-->
-    `)[0].downlevel
+    `)[0].downlevel,
   ).toEqual("hidden");
 
   expect(
     findConditionalComments(`
       <![if !mso]>downlevel-revealed<![endif]>
-    `)[0].downlevel
+    `)[0].downlevel,
   ).toEqual("revealed");
 
   expect(
     findConditionalComments(`
       <!--[if !mso]><!-->downlevel-revealed<!--<![endif]-->
-    `)[0].downlevel
+    `)[0].downlevel,
   ).toEqual("revealed");
 });
 
@@ -84,7 +84,7 @@ test("supports nested conditional comments", () => {
 
   // Identify outer and inner by range size
   const sorted = [...result].sort(
-    (a, b) => a.range[1] - a.range[0] - (b.range[1] - b.range[0])
+    (a, b) => a.range[1] - a.range[0] - (b.range[1] - b.range[0]),
   );
   const inner = sorted[0];
   const outer = sorted[1];
