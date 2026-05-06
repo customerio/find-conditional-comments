@@ -1,113 +1,113 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`find conditional comments 1`] = `
-Array [
-  Object {
+[
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if mso]>",
-    "range": Array [
+    "range": [
       17,
       42,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if MAC]>",
-    "range": Array [
+    "range": [
       69,
       116,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if gt mso 14]>",
-    "range": Array [
+    "range": [
       137,
       199,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if lt mso 14]>",
-    "range": Array [
+    "range": [
       223,
       285,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if gte mso 14]>",
-    "range": Array [
+    "range": [
       321,
       377,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if lte mso 14]>",
-    "range": Array [
+    "range": [
       410,
       466,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if (mso 12)|(mso 16)]>",
-    "range": Array [
+    "range": [
       493,
       558,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]-->",
     "downlevel": "hidden",
     "isComment": true,
     "open": "<!--[if (mso 12)&(mso 16)]>",
-    "range": Array [
+    "range": [
       586,
       651,
     ],
   },
-  Object {
+  {
     "bubble": true,
     "close": "<!--<![endif]-->",
     "downlevel": "revealed",
     "isComment": true,
     "open": "<!--[if !mso]><!-->",
-    "range": Array [
+    "range": [
       679,
       745,
     ],
   },
-  Object {
+  {
     "bubble": false,
     "close": "<![endif]>",
     "downlevel": "revealed",
     "isComment": false,
     "open": "<![if mso]>",
-    "range": Array [
+    "range": [
       766,
       787,
     ],
